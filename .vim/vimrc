@@ -1,0 +1,77 @@
+" et's start
+
+" Minimal .vimrc
+syntax on
+set number
+set modeline
+set modelines=4
+set ttyfast
+set wildmenu
+set cursorline
+set tabstop=2
+
+" Improvments
+set laststatus=2
+set ruler
+set shortmess=atI
+set showmode
+set title
+set showcmd
+set scrolloff=3
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+nmap ,l :set list! <CR>
+nmap ,w :IndentGuidesToggle <CR>
+
+"set backspace=indent,eol,start
+
+set lazyredraw        
+set confirm             
+set nobackup           
+set viminfo='20,\"500
+set hidden
+set history=50
+set hlsearch
+
+colorscheme jellybeans
+
+let $XIKI_DIR = "/Users/paramah/Enviroment/xiki"
+source /Users/paramah/Enviroment/xiki/etc/vim/xiki.vim 
+
+set background=dark
+hi CursorLine term=none cterm=none ctermbg=black
+
+"let g:Powerline_symbols = 'fancy'
+
+"hi IndentGuidesOdd  ctermbg=black
+"hi IndentGuidesEven ctermbg=darkgrey
+
+" set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%d/%m/%Y-%H:%M\")}%=\ col:%c%V\ ascii:%b\ pos:%o\ lin:%l\,%L\ %P
+" set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+" set statusline=%#StatusLineNC#\ Git\ %#ErrorMsg#\ %{GitBranchInfoTokens()[0]}\ |  %#StatusLine#
+
+" Statusline tweak
+hi User0 ctermbg=none ctermfg=blue guibg=none guifg=yellow
+hi User1 ctermbg=none ctermfg=red   guibg=green guifg=red
+hi User2 ctermbg=none ctermfg=blue  guibg=red   guifg=blue
+hi User3 ctermbg=none ctermfg=green guibg=blue  guifg=green
+hi User4 ctermbg=none ctermfg=yellow guibg=white guifg=green
+
+set statusline=
+"statusline GIT
+set statusline+=%#ErrorMsg#\ %{fugitive#statusline()}\ %#StatusLineNC#\ 
+"statusline file info
+set statusline+=%F%h%m%r%h%w%y\ %3*\ %{&ff}\ %#StatusLineNC#%0*\ %{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}\ 
+set statusline+=%4*([%b][0x%B]\)
+" statusline nav (ascii:%b\ pos:%o\) 
+set statusline+=%=%#StatusLineNC#[\|->%v]\ [->%l]\ %L\ [%P]
+
+" 
+"
+"
+
+
+

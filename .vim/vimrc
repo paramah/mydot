@@ -38,8 +38,8 @@ set hlsearch
 
 colorscheme gummybears
 
-let $XIKI_DIR = "/Users/paramah/Enviroment/xiki"
-source /Users/paramah/Enviroment/xiki/etc/vim/xiki.vim 
+"let $XIKI_DIR = "/Users/paramah/Enviroment/xiki"
+"source /Users/paramah/Enviroment/xiki/etc/vim/xiki.vim 
 
 set background=dark
 hi CursorLine term=none cterm=none ctermbg=black

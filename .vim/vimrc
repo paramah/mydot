@@ -61,5 +61,6 @@ set statusline+=%=%#StatusLineNC#[\|->%v]\ [->%l]\ %L\ [%P]
 "
 "
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 
